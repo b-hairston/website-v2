@@ -1,14 +1,14 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Imani",
+  firstName: "Ben",
   lastName: "Hairston",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Data Engineer",
   avatar: "/images/avatar.jpg",
-  // location: "America/Chicago", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  location: "America/Chicago", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: [], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -46,7 +46,7 @@ const home = {
   headline: <>Data engineer</>,
   subline: (
     <>
-      I'm Imani, a data engineer by trade building robust analytics pipelines
+      I'm Ben, a data engineer by trade building robust analytics pipelines
       <br /> and a curious programmer in my free time
     </>
   ),
@@ -72,7 +72,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Imani is a data engineer based out of Chicago who specializes in building data pipelines with Python, Prefect, and SQL, while also exploring full-stack frameworks like Next.js utilizing PostgreSQL, MySQL, and Snowflake
+        Ben is a data engineer based out of Chicago who specializes in building data pipelines with Python, Prefect, and SQL, while also exploring full-stack frameworks like Next.js utilizing PostgreSQL, MySQL, and Snowflake
       </>
     ),
   },
