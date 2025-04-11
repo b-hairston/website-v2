@@ -1,0 +1,51 @@
+---
+title: "Airflow Docker"
+publishedAt: "2021-12-04"
+summary: "An automated weather data pipeline using Airflow, DBT, Dask, and Docker."
+images:
+  - "/images/projects/project-04/bean-bot-01.jpg"
+  - "/images/projects/project-04/bean-bot-02.jpg"
+team:
+  - name: "Imani Hairston"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/imani-hairston/"
+link: "https://github.com/b-hairston/BeanBot"
+---
+
+## Overview
+
+This project implements an automated data pipeline that fetches weather data, processes it using Dask for distributed computing, and transforms it using DBT for analytics-ready models. The pipeline is orchestrated using Apache Airflow running in Docker containers.
+
+## Architecture
+
+- **Apache Airflow**: Orchestrates the entire pipeline and manages task dependencies.
+- **Dask**: Handles distributed data processing for the weather data, tested as a supplement/replacement to pandas.
+- **DBT**: Transforms raw weather data into analytics-ready models.
+- **PostgreSQL**: Stores both raw and transformed data.
+- **Docker**: Containerizes all components for consistent deployment.
+
+## Prerequisites
+
+- Docker and Docker Compose  
+- Python 3.11+  
+- dbt Core & `dbt-postgres`  
+- Access to [Open-Meteo](https://open-meteo.com/) (free weather data API)
+
+## Setup
+
+1. Install Docker and Docker Compose  
+2. Run `docker-compose up -d`  
+3. Visit [http://localhost:8080](http://localhost:8080) to access the Airflow control plane  
+4. Log in with username: `airflow` and password: `airflow`  
+5. You’re in! Now you can use the included DAG and add your own.
+
+## Project Structure
+
+### DAGs
+
+- **weather_dag**: An orchestrated series of tasks which retrieves data from Open-Meteo.
+
+### dbt
+
+- **weather_model**: A view model which converts some of the units to test the functioning of dbt.

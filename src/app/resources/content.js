@@ -1,7 +1,7 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Ben",
+  firstName: "Imani",
   lastName: "Hairston",
   get name() {
     return `${this.firstName} ${this.lastName}`;
@@ -25,7 +25,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/benjamin-hairston/",
+    link: "https://www.linkedin.com/in/imani-hairston/",
   },
   {
     name: "X",
@@ -46,7 +46,7 @@ const home = {
   headline: <>Data engineer</>,
   subline: (
     <>
-      I'm Ben, a data engineer by trade building robust analytics pipelines
+      I'm Imani, a data engineer by trade building robust analytics pipelines
       <br /> and a curious programmer in my free time
     </>
   ),
@@ -72,7 +72,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Ben is a data engineer based out of Chicago who specializes in building data pipelines with Python, Prefect, and SQL, while also exploring full-stack frameworks like Next.js utilizing PostgreSQL, MySQL, and Snowflake
+        Imani is a data engineer based out of Chicago who specializes in building data pipelines with Python, Prefect, and SQL, while also exploring full-stack frameworks like Next.js utilizing PostgreSQL, MySQL, and Snowflake
       </>
     ),
   },
