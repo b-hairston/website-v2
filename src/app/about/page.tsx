@@ -212,11 +212,6 @@ export default function About() {
                             radius="m"
           
                           >
-                            <SmartImage
-                              enlarge
-                              radius="m"
-             
-                            />
                           </Flex>
                         ))}
                       </Flex>
