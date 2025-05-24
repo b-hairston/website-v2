@@ -20,7 +20,7 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/b-hairston",
+    link: "https://github.com/i-hairston",
   },
   {
     name: "LinkedIn",
@@ -81,9 +81,26 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
+        company: "Numerator",
+        timeframe: "2025 - Present",
+        role: "Data Engineer",
+        achievements: [
+          <>
+          Mitigated infrastructure drift by correcting misconfiguations in Terraform
+          </>,
+          <>
+          Ensured the continued operation of jobs on Airflow, dbt, Airbyte
+          </>,
+          <>
+          Participated in on-call rotations to ensure any job failures were addressed immediately
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: "Bear Cognition",
-        timeframe: "2022 - Present",
-        role: "Data Engineering Manager",
+        timeframe: "2023 - 2025",
+        role: "Data Engineering Team Lead",
         achievements: [
           <>
           Redesigned and optimization of the organization's data warehouse, enabling clear cost transparency and actionable observability metrics for customers' Prefect and Snowflake workflows
@@ -92,19 +109,10 @@ const about = {
           Built logistics application integrating data from invoices for 30+ carriers and 80+ customers to calculate commissions and streamline shipment managment
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          // {
-          //   src: "/images/projects/project-01/cover-01.jpg",
-          //   alt: "Once UI Project",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
       },
       {
         company: "Bear Cognition",
-        timeframe: "2022 - 2024",
+        timeframe: "2020 - 2023",
         role: "Data Engineer",
         achievements: [
           <>
@@ -177,8 +185,8 @@ const about = {
         description: <> Using Docker for containerizing applications and managing multi-container setups with Docker Compose.</>,
       },
       {
-        title: "Metabase",
-        description: <> Using Metabase to visualize data from personal projects.</>,
+        title: "Terraform",
+        description: <> Using Terraform to manage infrastructure more efficiently</>,
       }
     ],
   },

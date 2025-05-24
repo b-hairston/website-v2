@@ -173,7 +173,7 @@ export default function About() {
             </Column>
           )}
 
-          {/* {about.work.display && (
+         {about.work.display && (
             <>
               <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m">
                 {about.work.title}
@@ -203,7 +203,7 @@ export default function About() {
                         </Text>
                       ))}
                     </Column>
-                    {experience.images.length > 0 && (
+                    {Array.isArray(experience.images) && experience.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
                         {experience.images.map((image, index) => (
                           <Flex
@@ -225,7 +225,7 @@ export default function About() {
                 ))}
               </Column>
             </>
-          )} */}
+          )}
 
           {about.studies.display && (
             <>
